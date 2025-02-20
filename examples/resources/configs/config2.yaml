@@ -1,0 +1,6 @@
+key_2_1: 'config 2'
+key_2_2: 'test env var = ${test_var_2}'
+key_2_3:
+  key_2_3_1:
+    key_2_3_1_1:
+      key_2_3_1_1_1: 'result'
