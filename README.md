@@ -1,2 +1,3 @@
-# config_loader
-Python simple config loader
+# Simple Config Loader
+
+When I have time I will definitely do a project description
