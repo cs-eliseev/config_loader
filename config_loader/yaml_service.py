@@ -29,6 +29,12 @@ class YamlLoaderService:
         self.yaml_service = yaml_service
 
     def load_configs(self, config_dir: str|Path) -> dict:
+        if isinstance(config_dir, str):
+            config_dir = Path(config_dir)
+
+        if not config_dir.is_dir():
+            return {}
+
         configs = {}
         for file_name in os.listdir(config_dir):
             if file_name.endswith(".yaml"):

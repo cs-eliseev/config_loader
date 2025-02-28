@@ -5,8 +5,6 @@ from typing import Any
 from dotenv import load_dotenv
 
 class Env:
-    """Обертка для переменных окружения."""
-
     ENV_VAR_PATTERN = re.compile(r"\$\{(\w+)\}")  # Regexp: ${VAR_NAME}
 
     def __init__(self, env_path: Path|str|None = None) -> None:

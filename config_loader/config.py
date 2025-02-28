@@ -2,9 +2,7 @@ from pathlib import Path
 from typing import Any
 from config_loader.utils import yaml_load_configs, yaml_load_config
 
-
 class ConfigCollection:
-    """Обертка для конфигов."""
     def __init__(self, configs: dict[str, Any]) -> None:
         self.configs = configs
 
