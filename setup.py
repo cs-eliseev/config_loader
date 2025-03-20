@@ -1,8 +1,8 @@
 from setuptools import setup
 
 setup(
-    name="Config loader",
-    version="0.0.3",
+    name="config_loader",
+    version="0.0.4",
     description="Simple config loader",
     author="Eliseev Alexey",
     license="MIT",
