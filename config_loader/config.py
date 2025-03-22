@@ -15,7 +15,7 @@ class ConfigCollection:
         """Get a value from nested dictionary using dot notation.
 
         Args:
-            key: Key in dot notation (e.g. 'parent.child.key')
+            key: Key in dot notation (e.g. 'parent.child.key' or 'array.0.name')
             default: Default value to return if key not found
 
         Returns:
@@ -25,11 +25,22 @@ class ConfigCollection:
         current: Any = self.all()
 
         for k in keys:
-            if not isinstance(current, dict):
+            if not isinstance(current, (dict, list)):
                 return default
-            current = current.get(k)
-            if current is None:
-                return default
+
+            if isinstance(current, list):
+                try:
+                    idx = int(k)
+                    if 0 <= idx < len(current):
+                        current = current[idx]
+                    else:
+                        return default
+                except (ValueError, TypeError):
+                    return default
+            else:
+                if k not in current:
+                    return default
+                current = current[k]
 
         return current
 

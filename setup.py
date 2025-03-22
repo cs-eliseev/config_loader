@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="config_loader",
-    version="0.0.5",
+    version="0.1.0",
     description="Simple config loader",
     author="Eliseev Alexey",
     license="MIT",
