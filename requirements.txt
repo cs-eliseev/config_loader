@@ -1,2 +1,4 @@
 dotenv~=0.9.9
 python-dotenv~=1.0.1
+cryptography~=42.0.5
+aiohttp~=3.9.3
