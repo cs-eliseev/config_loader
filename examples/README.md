@@ -1,3 +1,5 @@
+English | [Русский](https://github.com/cs-eliseev/config_loader/blob/master/examples/README.ru_RU.md)
+
 # config_loader Examples
 
 This directory contains examples of using the config_loader library. Examples are organized by categories for better understanding of functionality.
