@@ -1,4 +1,4 @@
-English | [Русский](https://github.com/cs-eliseev/config_loader/blob/master/README.ru_RU.md)
+English | [Русский](README.ru_RU.md)
 
 # Simple Config Loader
 
@@ -18,7 +18,7 @@ A simple and convenient configuration loader for Python applications, supporting
 ### Directly from GitHub
 
 ```bash
-pip install git+https://github.com/cs-eliseev/config_loader/config-loader.git
+pip install git+https://github.com/cs-eliseev/config_loader.git
 ```
 
 ## Usage
